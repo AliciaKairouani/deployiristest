@@ -5,7 +5,7 @@ from pydantic import BaseModel
 import joblib
 
 
-# 2. Class which describes a single flower measurements maxime a dit tu dois marcher
+# 2. Class which describes a single flower measurements 
 class IrisSpecies(BaseModel):
     sepal_length: float
     sepal_width: float
