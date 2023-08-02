@@ -9,6 +9,13 @@ model = IrisModel()
 
 # 3. Expose the prediction functionality, make a prediction from the passed
 #    JSON data and return the predicted flower species with the confidence
+@app.get('/')
+def home():
+    return {
+        'message': 'Hello darkness my old friend'
+    }
+
+
 @app.get('/predict')
 def predict_species(iris: IrisSpecies):
     data = iris.dict()
